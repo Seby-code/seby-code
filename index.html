@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Ma Boutique</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenue sur Ma Boutique</h2>
+            <p>Découvrez les meilleurs produits sélectionnés pour vous!</p>
+            <button onclick="location.href='#products'">Voir les Produits</button>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="product-container">
+                <article class="product">
+                    <img src="product1.jpg" alt="Produit 1">
+                    <h3>Produit 1</h3>
+                    <p>Prix : 50€</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </article>
+                <article class="product">
+                    <img src="product2.jpg" alt="Produit 2">
+                    <h3>Produit 2</h3>
+                    <p>Prix : 75€</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </article>
+                <article class="product">
+                    <img src="product3.jpg" alt="Produit 3">
+                    <h3>Produit 3</h3>
+                    <p>Prix : 30€</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </article>
+                <!-- Ajoute d'autres produits ici -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>À Propos de Nous</h2>
+            <p>Notre boutique est dédiée à vous offrir les meilleurs produits de qualité. Nous croyons en un service client exceptionnel et en des produits fiables.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <div class="testimonial-container">
+                <blockquote>
+                    <p>"Super expérience d'achat! Les produits sont de très bonne qualité."</p>
+                    <cite>- Client Satisfait</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Livraison rapide et service client exceptionnel!"</p>
+                    <cite>- Autre Client Satisfait</cite>
+                </blockquote>
+                <!-- Ajoute d'autres témoignages ici -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        
+       <section id="cart">
+    <div class="container">
+        <h2>Mon Panier</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total : 0€</p>
+    </div>
+</section>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Ma Boutique. Tous droits réservés.</p>
+            <p><a href="#privacy-policy">Politique de Confidentialité</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
